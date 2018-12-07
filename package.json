@@ -1,35 +1,5 @@
 {
-  "_args": [
-    [
-      "ionic2-super-tabs-fc@0.1.42",
-      "C:\\Projetos\\deca-app\\app"
-    ]
-  ],
-  "_from": "ionic2-super-tabs-fc@0.1.42",
-  "_inBundle": false,
-  "_integrity": "sha1-EZikwYSPb02Z37+VDyODwMWLy18=",
-  "_location": "/ionic2-super-tabs-fc",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "ionic2-super-tabs-fc@0.1.42",
-    "name": "ionic2-super-tabs-fc",
-    "escapedName": "ionic2-super-tabs-fc",
-    "rawSpec": "0.1.42",
-    "saveSpec": null,
-    "fetchSpec": "0.1.42"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ionic2-super-tabs-fc/-/ionic2-super-tabs-fc-0.1.42.tgz",
-  "_spec": "0.1.42",
-  "_where": "C:\\Projetos\\deca-app\\app",
-  "author": "Fernando Falcao <nandofalcao@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/nandofalcao/ionic2-super-tabs-fc/issues"
-  },
+  "author": "Victor Japex <victornb@msn.com>",
   "dependencies": {
     "jquery": "^3.2.1"
   },
@@ -53,13 +23,13 @@
     "typescript": "2.0.9",
     "zone.js": "0.7.2"
   },
-  "homepage": "https://github.com/nandofalcao/ionic2-super-tabs-fc#readme",
+  "homepage": "https://github.com/VictorJapex/ionic2-super-tabs-japex#readme",
   "license": "MIT",
   "main": "dist/index.js",
-  "name": "ionic2-super-tabs-fc",
+  "name": "ionic2-super-tabs-japex",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nandofalcao/ionic2-super-tabs-fc.git"
+    "url": "git+https://github.com/VictorJapex/ionic2-super-tabs-japex.git"
   },
   "scripts": {
     "build": "rm -rf aot dist && ngc",
