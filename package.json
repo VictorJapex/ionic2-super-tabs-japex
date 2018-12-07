@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "ionic2-super-tabs-fc@0.1.42",
+      "C:\\Projetos\\deca-app\\app"
+    ]
+  ],
+  "_from": "ionic2-super-tabs-fc@0.1.42",
+  "_inBundle": false,
+  "_integrity": "sha1-EZikwYSPb02Z37+VDyODwMWLy18=",
+  "_location": "/ionic2-super-tabs-fc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ionic2-super-tabs-fc@0.1.42",
+    "name": "ionic2-super-tabs-fc",
+    "escapedName": "ionic2-super-tabs-fc",
+    "rawSpec": "0.1.42",
+    "saveSpec": null,
+    "fetchSpec": "0.1.42"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ionic2-super-tabs-fc/-/ionic2-super-tabs-fc-0.1.42.tgz",
+  "_spec": "0.1.42",
+  "_where": "C:\\Projetos\\deca-app\\app",
+  "author": "Fernando Falcao <nandofalcao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nandofalcao/ionic2-super-tabs-fc/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "description": "Swipeable tabs for Ionic 2.",
+  "devDependencies": {
+    "@angular/common": "2.4.8",
+    "@angular/compiler": "2.4.8",
+    "@angular/compiler-cli": "2.4.8",
+    "@angular/core": "2.4.8",
+    "@angular/forms": "^2.4.8",
+    "@angular/http": "2.4.8",
+    "@angular/platform-browser": "2.4.8",
+    "@angular/platform-browser-dynamic": "2.4.8",
+    "@angular/platform-server": "2.4.8",
+    "copy": "^0.3.0",
+    "copyfiles": "^1.2.0",
+    "ionic-angular": "2.2.0",
+    "ionicons": "3.0.0",
+    "rxjs": "5.0.1",
+    "sw-toolbox": "3.4.0",
+    "typescript": "2.0.9",
+    "zone.js": "0.7.2"
+  },
+  "homepage": "https://github.com/nandofalcao/ionic2-super-tabs-fc#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "ionic2-super-tabs-fc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandofalcao/ionic2-super-tabs-fc.git"
+  },
+  "scripts": {
+    "build": "rm -rf aot dist && ngc",
+    "copy:scss": "cd src && copyfiles '**/*.scss' ../dist",
+    "prod": "npm run build && npm run copy:scss"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "0.1.42",
+  "keywords": []
+}
