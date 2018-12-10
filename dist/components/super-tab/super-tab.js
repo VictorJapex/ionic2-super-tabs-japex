@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 export var SuperTabComponent = (function () {
     function SuperTabComponent() {
-        console.log('Hello SuperTab Component');
+        console.log('Hello JapexSuperTab Component');
     }
     SuperTabComponent.decorators = [
         { type: Component, args: [{
@@ -14,8 +14,8 @@ export var SuperTabComponent = (function () {
     SuperTabComponent.propDecorators = {
         'tabRoot': [{ type: Input },],
         'title': [{ type: Input },],
-        'icon': [{ type: Input },],
         'id': [{ type: Input },],
+        'icon': [{ type: Input },],
     };
     return SuperTabComponent;
 }());

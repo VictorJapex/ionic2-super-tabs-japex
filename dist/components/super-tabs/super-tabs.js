@@ -20,7 +20,7 @@ export var SuperTabsComponent = (function () {
         this.slideWidth = '0';
         this.shouldSlideEase = false;
         this.pageTitle = '';
-        console.log('Hello SuperTabs Component');
+        console.log('Hello JapexSuperTabs Component');
     }
     Object.defineProperty(SuperTabsComponent.prototype, "selectedTabIndex", {
         get: function () {
@@ -94,6 +94,7 @@ export var SuperTabsComponent = (function () {
             this.slides.slideTo(index);
         }
     };
+
     /**
      * Animate scroll tab navigation
      */
@@ -130,7 +131,7 @@ export var SuperTabsComponent = (function () {
     SuperTabsComponent.decorators = [
         { type: Component, args: [{
                     selector: 'super-tabs',
-                    template: "\n      <ion-header class=\"super-tabs\">\n          <ion-navbar hideBackButton=\"true\">\n              <ion-title>{{pageTitle}}</ion-title>\n              <ng-content></ng-content>\n          </ion-navbar>\n          <ion-toolbar>\n              <ion-segment #segment [(ngModel)]=\"selectedTabIndex\">\n                  <ion-segment-button *ngFor=\"let tab of tabs; let i = index\" [value]=\"i\" [id]=\"tab.id\" (ionSelect)=\"onTabSelect(i)\">\n                      <ion-icon *ngIf=\"tab.icon\" [name]=\"tab.icon\"></ion-icon>\n                      {{tab.title}}\n                  </ion-segment-button>\n              </ion-segment>\n              <div class=\"slide\" #slide [style.left]=\"slidePosition\" [class.ease]=\"shouldSlideEase\" [style.width]=\"slideWidth\"></div>\n          </ion-toolbar>\n      </ion-header>\n      <ion-slides class=\"super-tabs\" [style.margin-top]=\"headerHeight + 'px'\" [style.height]=\"slidesHeight + 'px'\" (ionSlideDrag)=\"onDrag($event)\" (ionSlideWillChange)=\"onSlideWillChange()\" (ionSlideDidChange)=\"onSlideDidChange()\" [initialSlide]=\"selectedTabIndex\">\n          <ion-slide *ngFor=\"let tab of tabs\">\n              <ion-nav [root]=\"tab.tabRoot\"></ion-nav>\n          </ion-slide>\n      </ion-slides>\n  "
+                    template: "\n      <ion-header class=\"super-tabs\">\n          <ion-navbar hideBackButton=\"true\">\n              <ion-title>{{pageTitle}}</ion-title>\n              <ng-content></ng-content>\n          </ion-navbar>\n          <ion-toolbar>\n              <ion-segment #segment [(ngModel)]=\"selectedTabIndex\">\n                  <ion-segment-button *ngFor=\"let tab of tabs; let i = index\" [value]=\"i\" [id]=\"onSetIndex(tab,i)\" (ionSelect)=\"onTabSelect(i)\">\n                      <ion-icon *ngIf=\"tab.icon\" [name]=\"tab.icon\"></ion-icon>\n                      {{tab.title}}\n                  </ion-segment-button>\n              </ion-segment>\n              <div class=\"slide\" #slide [style.left]=\"slidePosition\" [class.ease]=\"shouldSlideEase\" [style.width]=\"slideWidth\"></div>\n          </ion-toolbar>\n      </ion-header>\n      <ion-slides class=\"super-tabs\" [style.margin-top]=\"headerHeight + 'px'\" [style.height]=\"slidesHeight + 'px'\" (ionSlideDrag)=\"onDrag($event)\" (ionSlideWillChange)=\"onSlideWillChange()\" (ionSlideDidChange)=\"onSlideDidChange()\" [initialSlide]=\"selectedTabIndex\">\n          <ion-slide *ngFor=\"let tab of tabs\">\n              <ion-nav [root]=\"tab.tabRoot\"></ion-nav>\n          </ion-slide>\n      </ion-slides>\n  "
                 },] },
     ];
     /** @nocollapse */

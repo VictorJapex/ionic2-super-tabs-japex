@@ -37,6 +37,11 @@
     "prod": "npm run build && npm run copy:scss"
   },
   "typings": "dist/index.d.ts",
-  "version": "0.1.42",
-  "keywords": []
+  "version": "1.0.0",
+  "keywords": [
+    "Tabs",
+    "Japex",
+    "Ionic2",
+    "Id"
+  ]
 }
